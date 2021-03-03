@@ -10,7 +10,6 @@ namespace Alura.LeilaoOnline.Core
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
 
-
         public Leilao(string peca)
         {
             Peca = peca;
@@ -29,7 +28,9 @@ namespace Alura.LeilaoOnline.Core
 
         public void TerminaPregao()
         {
-            Ganhador = Lances.Last();
+            Ganhador = Lances
+                .OrderBy(l => l.Valor)
+                .Last();
         }
     }
 }
