@@ -1,0 +1,8 @@
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.deps.json
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.dll
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.pdb
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.AssemblyInfoInputs.cache
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.AssemblyInfo.cs
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.csproj.CoreCompileInputs.cache
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.dll
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.Core\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.pdb

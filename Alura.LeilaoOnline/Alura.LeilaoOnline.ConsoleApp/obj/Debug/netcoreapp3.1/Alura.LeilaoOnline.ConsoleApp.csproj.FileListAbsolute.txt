@@ -1,0 +1,16 @@
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.exe
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.deps.json
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.runtimeconfig.json
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.runtimeconfig.dev.json
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.dll
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.pdb
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.Core.dll
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp3.1\Alura.LeilaoOnline.Core.pdb
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.AssemblyInfo.cs
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.csproj.CopyComplete
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.dll
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.pdb
+C:\Users\Tiago SM\Desktop\CSharp-testes-de-unidade-e-TDD-com-xUnit\Alura.LeilaoOnline\Alura.LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp3.1\Alura.LeilaoOnline.ConsoleApp.genruntimeconfig.cache
