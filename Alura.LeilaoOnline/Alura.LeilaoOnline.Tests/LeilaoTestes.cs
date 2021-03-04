@@ -10,6 +10,7 @@ namespace Alura.LeilaoOnline.Tests
         public void LeilaoComTresClientes()
         {
             //Arranje - Cenário.
+            //Dado leilao com pelo menos um lance
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
@@ -22,9 +23,12 @@ namespace Alura.LeilaoOnline.Tests
             leilao.RecebeLance(beltrano, 1400);
 
             //Act - método sobre teste.
+            //Quando o pregão/leilão termina
             leilao.TerminaPregao();
 
             //Assert.
+            //Então o valor esperado é o maior valor dado
+            //e o cliente é ganhador é o que deu o maior lance
             var valorEsperado = 1400;
             var valorObtido = leilao.Ganhador.Valor;
 
@@ -36,6 +40,7 @@ namespace Alura.LeilaoOnline.Tests
         public void LeilaoOrdenadosPorValor()
         {
             //Arranje - Cenário.
+            //Dado leilao com lances ordenados por valor 
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
@@ -46,9 +51,11 @@ namespace Alura.LeilaoOnline.Tests
             leilao.RecebeLance(fulano, 1000);
 
             //Act - método sobre teste.
+            //Quando o pregão/leilão termina
             leilao.TerminaPregao();
 
             //Assert.
+            //Então o valor esperado é o maior
             var valorEsperado = 1000;
             var valorObtido = leilao.Ganhador.Valor;
 
@@ -59,6 +66,7 @@ namespace Alura.LeilaoOnline.Tests
         public void LeilaoComVariosLances()
         {
             //Arranje - Cenário.
+            //Dado leilao com lances sem ordemd e valor 
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
@@ -69,9 +77,11 @@ namespace Alura.LeilaoOnline.Tests
             leilao.RecebeLance(maria, 990);
 
             //Act - método sobre teste.
+            //Quando o pregão/leilão termina
             leilao.TerminaPregao();
 
             //Assert.
+            //Então o valor esperado é o maior valor
             var valorEsperado = 1000;
             var valorObtido = leilao.Ganhador.Valor;
 
@@ -82,15 +92,18 @@ namespace Alura.LeilaoOnline.Tests
         public void LeilaComApenasUmLance()
         {
             //Arranje - Cenário.
+            //Dado o leilão com apenas um lance
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
 
             leilao.RecebeLance(fulano, 800);
 
             //Act - método sobre teste.
+            //Quando o pregão/leilão termina
             leilao.TerminaPregao();
 
             //Assert.
+            //Então o valor esperado é o maior valor
             var valorEsperado = 800;
             var valorObtido = leilao.Ganhador.Valor;
 
