@@ -5,6 +5,7 @@ namespace Alura.LeilaoOnline.Core
 {
     public enum EstadoLeilao
     {
+        LeilaoAntesDopregao,
         LeilaoEmAndamento,
         LeilaoFinalizado
     }
@@ -21,19 +22,18 @@ namespace Alura.LeilaoOnline.Core
         {
             Peca = peca;
             _lances = new List<Lance>();
-            Estado = EstadoLeilao.LeilaoEmAndamento;
+            Estado = EstadoLeilao.LeilaoAntesDopregao;
         }
 
         public void RecebeLance(Interessada cliente, double valor)
         {
-
             if (Estado == EstadoLeilao.LeilaoEmAndamento)
                 _lances.Add(new Lance(cliente, valor));
         }
 
         public void IniciaPregao()
         {
-
+            Estado = EstadoLeilao.LeilaoEmAndamento;
         }
 
         public void TerminaPregao()
