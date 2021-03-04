@@ -1,16 +1,15 @@
-﻿
-using Alura.LeilaoOnline.Core;
+﻿using Alura.LeilaoOnline.Core;
 using Xunit;
 
 namespace Alura.LeilaoOnline.Tests
 {
-    public class LeilaoTestes
+    public class LeilaoTerminaPregao
     {
         [Theory]
-        [InlineData(1000, new double[] { 800, 900, 1000, 1200 })]
+        [InlineData(1200, new double[] { 800, 900, 1000, 1200 })]
         [InlineData(1000, new double[] { 800, 900, 1000, 990 })]
         [InlineData(800, new double[] { 800 })]
-        public void LeilaoComVariosLances(double valorEsperado, double[] ofertas)
+        public void RetornaMaiorValorDadoLeilaoComPeloMenosUmLance(double valorEsperado, double[] ofertas)
         {
             //Arranje - Cenário.
             //Dado leilao com lances sem ordemd e valor 
@@ -34,7 +33,7 @@ namespace Alura.LeilaoOnline.Tests
         }
 
         [Fact]
-        public void LeilaSemLances()
+        public void RetornaZeroDadoLeilaoSemLances()
         {
             //Arranje - Cenário.
             //Dado o leilão sem qualquer lance
@@ -45,7 +44,7 @@ namespace Alura.LeilaoOnline.Tests
             leilao.TerminaPregao();
 
             //Assert.
-            //Então o valor do lance ganhador [e zero
+            //Então o valor do lance ganhador é zero
             var valorEsperado = 0;
             var valorObtido = leilao.Ganhador.Valor;
 
