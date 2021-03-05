@@ -1,4 +1,5 @@
 ﻿using Alura.LeilaoOnline.Core;
+using System;
 using Xunit;
 
 namespace Alura.LeilaoOnline.Tests
@@ -44,8 +45,26 @@ namespace Alura.LeilaoOnline.Tests
         public void RetornaZeroDadoLeilaoSemLances()
         {
             //Arranje - Cenário.
+            var leilao = new Leilao("Van Gogh");
+
+            //Assert.
+           var excecaoObtida = Assert.Throws<InvalidOperationException>(
+                //Act - método sobre teste.
+                () => leilao.TerminaPregao()
+            );
+
+            var msgEsperada = "Não é possivel terminar o pregão sem que ele tenha começado,Para isso utilize o métodop IniciaPregao()";
+
+            Assert.Equal(msgEsperada, excecaoObtida.Message);
+        }
+
+        [Fact]
+        public void LancaInvalidOperationExceptionDadoPregaoNaoIniciado()
+        {
+            //Arranje - Cenário.
             //Dado o leilão sem qualquer lance
             var leilao = new Leilao("Van Gogh");
+            leilao.IniciaPregao();
 
             //Act - método sobre teste.
             //Quando o pregão/leilão termina
