@@ -9,11 +9,15 @@ namespace Alura.LeilaoOnline.Tests
     {
         [Theory]
         [InlineData(1200, 1250, new double[] { 800, 1150, 1400, 1250 })]
-        public void RetornaValorSuperiorMaisProximoDadoLeilaoNessaModalidade(double valorDestino, double valorEsperado, double[] ofertas)
+        public void RetornaValorSuperiorMaisProximoDadoLeilaoNessaModalidade(
+            double valorDestino, 
+            double valorEsperado, 
+            double[] ofertas)
         {
             //Arranje - Cenário.
             //Dado leilao com lances sem ordemd e valor 
-            var leilao = new Leilao("Van Gogh", valorDestino);
+            IModalidadeAvaliacao modalidade = new OfertaSuperiorMaisProxima(valorDestino);
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
@@ -48,7 +52,8 @@ namespace Alura.LeilaoOnline.Tests
         {
             //Arranje - Cenário.
             //Dado leilao com lances sem ordemd e valor 
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
@@ -78,38 +83,36 @@ namespace Alura.LeilaoOnline.Tests
         [Fact]
         public void RetornaZeroDadoLeilaoSemLances()
         {
-            //Arranje - Cenário.
-            var leilao = new Leilao("Van Gogh");
+            //Arranje - cenário
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
+            leilao.IniciaPregao();
 
-            //Assert.
-            var excecaoObtida = Assert.Throws<InvalidOperationException>(
-                 //Act - método sobre teste.
-                 () => leilao.TerminaPregao()
-             );
+            //Act - método sob teste
+            leilao.TerminaPregao();
 
-            var msgEsperada = "Não é possivel terminar o pregão sem que ele tenha começado,Para isso utilize o métodop IniciaPregao()";
+            //Assert
+            var valorEsperado = 0;
+            var valorObtido = leilao.Ganhador.Valor;
 
-            Assert.Equal(msgEsperada, excecaoObtida.Message);
+            Assert.Equal(valorEsperado, valorObtido);
         }
 
         [Fact]
         public void LancaInvalidOperationExceptionDadoPregaoNaoIniciado()
         {
-            //Arranje - Cenário.
-            //Dado o leilão sem qualquer lance
-            var leilao = new Leilao("Van Gogh");
-            leilao.IniciaPregao();
+            // Arranje - cenário
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
 
-            //Act - método sobre teste.
-            //Quando o pregão/leilão termina
-            leilao.TerminaPregao();
+            //Assert
+            var excecaoObtida = Assert.Throws<System.InvalidOperationException>(
+                //Act - método sob teste
+                () => leilao.TerminaPregao()
+            );
 
-            //Assert.
-            //Então o valor do lance ganhador é zero
-            var valorEsperado = 0;
-            var valorObtido = leilao.Ganhador.Valor;
-
-            Assert.Equal(valorEsperado, valorObtido);
+            var msgEsperada = "Não é possível terminar o pregão sem que ele tenha começado. Para isso, utilize o método IniciaPregao().";
+            Assert.Equal(msgEsperada, excecaoObtida.Message);
         }
     }
 }

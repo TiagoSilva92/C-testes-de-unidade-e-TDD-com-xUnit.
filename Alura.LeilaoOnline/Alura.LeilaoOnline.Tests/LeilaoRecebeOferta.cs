@@ -11,7 +11,8 @@ namespace Alura.LeilaoOnline.Tests
         {
             //Arranje - Cenário.
             //Dado leilão iniciado e interessado X realizou o ultimo lance
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
 
             leilao.IniciaPregao();
@@ -20,7 +21,7 @@ namespace Alura.LeilaoOnline.Tests
 
             //Act - método sobre teste.
             //Quando mesmo interessado X realiza o próximo lance
-            leilao.RecebeLance(fulano, 800);
+            leilao.RecebeLance(fulano, 1000);
 
             //Assert.
             //Então leilão não aceita o segundo lance
@@ -38,7 +39,8 @@ namespace Alura.LeilaoOnline.Tests
         {
             //Arranje - Cenário.
             //Dado o leilão Finalizado com X lances
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
@@ -58,7 +60,7 @@ namespace Alura.LeilaoOnline.Tests
 
             //Act - método sobre teste.
             //Quando leilão recebe nova oferta de lance
-            leilao.RecebeLance(fulano, 100);
+            leilao.RecebeLance(fulano, 1000);
 
             //Assert.
             //Então a quantidade continua sendo X
